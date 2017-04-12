@@ -8,7 +8,7 @@ import java.util.Optional;
  * @author anderson
  *
  */
-public class MainTest {
+public class TestRecebimentoService {
 
 	public static void main(String[] args) {
 		//tional<String> textos = Optional.ofNullable("anderson");

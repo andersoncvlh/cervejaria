@@ -17,7 +17,7 @@ public class CervejasController extends BasedController {
 
 	@RequestMapping("/cervejas/novo")
 	public String novo(Cerveja cerveja) {
-		return "/cervejas/cadastro-cervejas";
+		return "/cervejas/cervejasCadastro";
 	}
 	
 	@RequestMapping(value = "/cervejas/novo", method = RequestMethod.POST)

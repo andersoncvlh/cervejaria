@@ -12,13 +12,13 @@ public class RecebimentoController extends BasedController {
 
 	@RequestMapping("/recebimento/novo")
 	public String novo() {
-		return "/recebimento/cadastro-recebimento";
+		return "/recebimento/recebimentoCadastro";
 	}
 	
 	@RequestMapping(value = "/recebimento/novo", method = RequestMethod.POST)
 	public String cadastrar(Recebimento recebimento) {
 		System.out.println(recebimento.getDescricao());
-		return "/recebimento/cadastro-recebimento";
+		return "/recebimento/recebimentoCadastro";
 	}
 	
 }

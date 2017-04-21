@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout/layout-padrao">
+
+<head> 
+  <title>Cadastro de Recebimento</title> 
+</head> 
+
+<section layout:fragment="conteudo">
+
+	<div class="page-header">
+		<div class="container-fluid">
+			<h1>
+				Cadastro de recebimento
+			</h1>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<form class="form-vertical  js-form-loading">
+			<div class="form-group">
+				<label for="descricao" >Descricao</label>
+				<input id="descricao" type="text" class="form-control"/>
+			</div>
+			<div class="row">
+				<div class="col-md-4 form-group">
+					<label for="dataPrevista">Data prevista</label>
+					<input id="dataPrevista" type="date" class="form-control"/>
+				</div>
+				<div class="col-md-4 form-group">
+					<label for="valorPrevisto">Valor previsto</label>
+					<input id="valorPrevisto" type="number" class="form-control"/>
+				</div>
+				<div class="col-md-4 form-group">
+					<label for="tipo">Tipo</label>
+					<div>
+						<div class="radio  radio-inline">
+							<input type="radio" name="tipo"> 
+							<label>Agendado</label>
+						</div>
+						<div class="radio  radio-inline">
+							<input type="radio" name="tipo"> 
+							<label>Recebido</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 form-group">
+					<label for="dataRecebimento">Data do recebimento</label>
+					<input id="dataRecebimento" type="date" class="form-control" />
+				</div>
+				<div class="col-md-4 form-group">
+					<label for="valorRecebido">Valor recebido</label>
+					<input id="valorRecebido" type="number" class="form-control" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="obs">Observação</label>
+				<textarea id="obs" class="form-control" rows="2" cols="5"></textarea>
+			</div>
+			<div class="form-group">
+				<button class="btn btn-primary" type="submit">Salvar</button>
+			</div>
+		</form>
+	</div>
+</section>
+</html>
